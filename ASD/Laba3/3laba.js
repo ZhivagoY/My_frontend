@@ -4,7 +4,7 @@ function findNumbers(x) {
     for (let k = 0; k <= 10; k++) { // Ограничение по степеням 3, 5, 7 (можно подстроить)
       for (let l = 0; l <= 10; l++) {
         for (let m = 0; m <= 10; m++) {
-          if (Math.pow(3, k) * Math.pow(5, l) * Math.pow(7, m) === i) {
+          if (3**k * 5**l * 7**m === i) {
             result.push(i);
             break; // Если число найдено, переходим к следующему
           }
